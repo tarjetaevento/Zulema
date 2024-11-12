@@ -1,0 +1,53 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body, html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f4f8;
+}
+
+/* Contenedor para la sección de agradecimiento */
+.gracias-contenido {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 90%;
+}
+
+h1 {
+    color: #2b4b46;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #767B35;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #767B35;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #9cb97e;
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis 60 AÑOS</title>
+
+    <!-- Meta tags para SEO -->
+    <meta name="description" content="¡Únete a celebrar el cumpleaños de Rosa Lucia Ramos! Una fiesta llena de alegría y emoción.">
+    <meta name="keywords" content="cumpleaños, fiesta, 60 años, invitación, Rosa">
+    <meta name="author" content="Gonzalo Fernando Reales">
+    
+    <!-- Importar las fuentes Montserrat y WindSong -->
+    <link rel="stylesheet" href="css/conmusica-styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=WindSong:wght@400;500&display=swap">
+    
+    <!-- Incluir Font Awesome desde su CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <script src="js/conmusica-script.js" defer></script>
+</head>
+
+<body>
+    <!-- Fondo decorativo superior -->
+    <div class="decorative-top">
+        <img src="assets/arriba.png" alt="Decoración floral superior">
+    </div>
+    
+    <!-- Contenido principal centrado -->
+    <main class="main-content">
+        <div class="date-line">
+            <span class="line"></span>
+            <p class="date">16 . 11 . 2024</p>
+            <span class="line"></span>
+        </div>
+        <h1 class="nombre-cumpleanera">Rosa Lucía Ramos</h1>
+        <h2>Mis 60 años</h2>
+        <blockquote>
+            Cada año vivido es un tesoro, y hoy celebramos <b>el inmenso valor de tu vida.</b>
+            <br>
+            <br>
+            ¡Por muchos años más llenos de felicidad!
+        </blockquote>
+        <div class="down-arrow"></div>
+        <br>
+        <br>
+        
+        <!-- Sección de cuenta regresiva -->
+        <div class="countdown-container">
+            <img src="assets/fondo_cuenta.png" alt="Fondo cuenta regresiva" class="countdown-background-img">
+            <div id="countdown">
+                <p class="countdown-title">Falta</p>
+                <div class="time">
+                    <div><span id="days">00</span><p>días</p></div>
+                    <div><span id="hours">00</span><p>hs</p></div>
+                    <div><span id="minutes">00</span><p>min</p></div>
+                    <div><span id="seconds">00</span><p>seg</p></div>
+                </div>
+                <div class="heart-icon"><i class="fas fa-heart" aria-hidden="true"></i></div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        <!-- Círculo con icono animado -->
+        <div class="animated-icon-container">
+            <i class="fas fa-glass-cheers animated-icon"></i>
+        </div>
+        <br>
+        
+        <!-- Sección de información del evento -->
+        <section class="evento-info">
+            <div class="banner-titulo">
+                <img src="assets/fiesta.png" alt="Fiesta" class="banner-imagen">
+            </div>
+            <br>
+            <div class="evento-detalle">
+                <h2>Día</h2>
+                <p>Sábado 16 de Noviembre - 13:30 hs</p>
+                <button onclick="agendarEvento()">AGENDAR</button>
+            </div>
+            <br>
+            <div class="evento-detalle">
+                <h2>Lugar</h2>
+                <p>Salón Fantasía</p>
+                <button onclick="confirmarAsistencia()">CONFIRMAR ASISTENCIA</button>
+            </div>
+        </section>
+
+        <section class="evento-info">
+            <div class="evento-detalle">
+                <h2>Dirección</h2>
+                <p>Hipólito Yrigoyen 550 - La Merced</p>
+                <button onclick="comoLlegar()">¿CÓMO LLEGAR?</button>
+
+                <!-- Imagen que se animará -->
+                <img src="assets/floral-01.png" alt="Decoración floral" class="imagen-animada">
+            </div>
+        </section>
+
+        <section class="decorative-lines-section">
+            <img src="assets/lineas.png" alt="Decorative Lines" class="decorative-lines">
+        </section>
+
+    
+
+        <section id="nota-section">
+            <div class="detalle-musica">
+                    <h3>Gracias por Celebrar con Nosotros</h3>
+                    <img src="assets/notas.png" alt="Icono de Música" class="icono-musica">
+                    <p>Tu presencia hace que ese día sea especial. Gracias por ser parte de este momento inolvidable.</p>
+                    <p>Te invitamos a dejar unas palabras si es que, así lo deseas y seguir creando hermosos recuerdos.</p>
+                    <button onclick="window.location.href='escrito.html'">Escribir</button>
+            </div>
+            <img src="assets/floral-02.png" alt="Decoración floral derecha" class="imagen-animada-derecha">
+
+        </section>
+        
+
+        
+        <br>
+        <br>
+        <br>
+    </main>
+
+    
+
+</body>
+
+<footer class="footer">
+    <p>Todos Los Derechos Reservados - <strong>REGIO 2024</strong></p>
+</footer>
+
+</html>

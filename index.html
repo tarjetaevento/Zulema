@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bienvenidos</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="welcome-screen">
+    <h1>¡Bienvenida, Zulema! <p>Hoy eres una parte esencial de esta celebración especial dedicada a Rosa</p></h1>
+    <p>Prepárate para una experiencia única donde cada detalle ha sido pensado para compartir este momento tan especial contigo</p>
+
+    <div class="persona-label">
+      <img src="assets/icon_person.png" alt="Icono de persona" class="persona-icon">
+      Persona 2
+  </div>
+  
+
+
+    <div class="button-container">
+
+      <button onclick="enterWithMusic()">Ingresar</button>
+
+      <!-- <button onclick="enterWithoutMusic()">Ingresar sin música</button> -->
+
+    </div>
+
+  </div>
+
+  <script src="js/scripts.js"></script>
+
+  <script>
+    function enterWithMusic() {
+      // Redirige a la página con música, por ejemplo: "paginaConMusica.html"
+      window.location.href = 'paginaConMusica.html'; 
+    }
+  
+    function enterWithoutMusic() {
+      // Redirige a la página sin música, por ejemplo: "paginaSinMusica.html"
+      window.location.href = 'paginaSinMusica.html'; 
+    }
+  </script>
+
+</body>
+
+</html>

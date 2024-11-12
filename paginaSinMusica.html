@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florencia - Mis 15 Años</title>
+    <link rel="stylesheet" href="css/main-styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Florencia - Mis 15 Años</h1>
+            <p>Te invito a ser parte de un día muy especial en mi vida</p>
+        </header>
+        
+        <section class="countdown">
+            <h2>Falta</h2>
+            <div class="countdown-timer">
+                <div><span id="days">00</span><br>Días</div>
+                <div><span id="hours">00</span><br>Horas</div>
+                <div><span id="minutes">00</span><br>Minutos</div>
+                <div><span id="seconds">00</span><br>Segundos</div>
+            </div>
+        </section>
+
+        <section class="event-info">
+            <h2>Detalles del Evento</h2>
+            <div class="buttons">
+                <button class="button" onclick="toggleSection('event')">Fiesta</button>
+                <button class="button" onclick="toggleSection('gift')">Regalos</button>
+            </div>
+            <div class="info-content" id="event" style="display: none;">
+                <p>¡Te esperamos en un día muy especial! <br> Sábado 15 de Junio - Salón Azul</p>
+            </div>
+            <div class="info-content" id="gift" style="display: none;">
+                <p>Si deseas regalarme algo, aquí algunas sugerencias para recordar este día.</p>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>Florencia - Mis 15 años</p>
+        </footer>
+    </div>
+
+    <script src="js/main-scripts.js"></script>
+</body>
+</html>

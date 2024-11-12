@@ -1,0 +1,441 @@
+/* Estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f7f5f2;
+    color: #4a4a4a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    overflow-y: scroll; /* Permite scroll vertical */
+}
+
+.decorative-top {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+.decorative-top img {
+    max-width: 100%;
+    height: auto;
+}
+
+.main-content {
+    text-align: center;
+    padding: 20px;
+    margin-top: 200px;
+    z-index: 1;
+}
+
+.date-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.line {
+    flex: 1;
+    height: 0.5px;
+    background-color: #4a4a4a;
+    margin: 0 5px;
+}
+
+.date {
+    font-size: 1em;
+    color: #4a4a4a;
+    font-weight: 300;
+}
+
+.nombre-cumpleanera {
+    font-family: 'WindSong', cursive;
+    font-size: 3em;
+    color: #4a4a4a;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #a3a12f;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+blockquote {
+    font-size: 1em;
+    color: #4a4a4a;
+    font-style: italic;
+    line-height: 1.5;
+    margin: 20px auto;
+    max-width: 300px;
+}
+
+blockquote::before, blockquote::after {
+    content: "“";
+    font-size: 2em;
+    color: #a3a12f;
+}
+
+.down-arrow {
+    font-size: 1.5em;
+    color: #4a4a4a;
+    margin-top: 20px;
+}
+
+.countdown-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.countdown-background-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: 0; /* Coloca la imagen detrás del contenido */
+    opacity: 0.8; /* Opcional: ajusta la opacidad para darle un efecto de transparencia */
+}
+
+#countdown {
+    position: relative;
+    z-index: 1; /* Asegura que el contenido esté por encima de la imagen de fondo */
+    text-align: center;
+    color: #4a4a4a;
+    font-weight: bold;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0); /* Fondo semitransparente para mayor legibilidad */
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.countdown-title {
+    font-size: 1.2em;
+    color: #a3a12f;
+    margin-bottom: 10px;
+}
+
+.time {
+    display: flex;
+    justify-content: space-around;
+}
+
+.time div {
+    text-align: center;
+    margin: 0 5px;
+}
+
+.time span {
+    font-size: 2em;
+    color: #2f4f4f;
+}
+
+.time p {
+    font-size: 0.8em;
+    color: #4a4a4a;
+}
+
+.heart-icon {
+    font-size: 1.5em;
+    color: #a3a12f;
+    margin-top: 10px;
+    animation: heartbeat 1.5s ease-in-out infinite; /* Aplica la animación en bucle */
+}
+
+/* Animación de palpitación lenta */
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1); /* Tamaño normal */
+    }
+    50% {
+        transform: scale(1.2); /* Tamaño ligeramente mayor para el efecto de latido */
+    }
+}
+
+/* Estilos para el círculo debajo de la cuenta regresiva */
+.animated-icon-container {
+    width: 80px; /* Tamaño del círculo */
+    height: 80px;
+    background-color: white; /* Color de fondo del círculo */
+    border-radius: 50%; /* Círculo perfecto */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto; /* Centra el círculo horizontalmente y da margen superior */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+/* Estilos y animación del ícono */
+.animated-icon {
+    font-size: 1.5em; /* Tamaño del ícono */
+    color: #2f4f4f; /* Color inicial */
+    animation: iconBounce 1.5s infinite ease-in-out; /* Animación en bucle */
+}
+
+/* Animación de rebote */
+@keyframes iconBounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+/* FIESTA */
+
+/* Sección de información del evento */
+.evento-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #5a7460;
+    margin-top: 20px;
+}
+
+.banner-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0; /* Reducido el padding lateral */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    max-width: 80%; /* Limita el ancho máximo del contenedor */
+}
+
+/* Imagen responsiva del banner */
+.banner-imagen {
+    max-width: 50%; /* Ajusta este valor para hacer la imagen más pequeña o más grande */
+    height: auto;
+    object-fit: contain;
+    margin: 0 20px; /* Opcional: Añade márgenes laterales */
+}
+
+.evento-detalle {
+    margin-bottom: 20px;
+    color: #5a7460;
+}
+
+.evento-detalle h2 {
+    font-size: 1.2em;
+    color: #5a7460;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.evento-detalle p {
+    font-size: 1em;
+    color: #8a9a85;
+    margin-bottom: 10px;
+}
+
+.evento-detalle button {
+    background-color: #7a8f65;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    font-weight: bold;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.evento-detalle button:hover {
+    transform: scale(1.05); /* Efecto de aumento al pasar el ratón */
+    background-color: #6a7e55;
+}
+
+/* Floral */
+
+/* Estilos iniciales de la imagen */
+.imagen-animada {
+    position: absolute;
+    left: -100px; /* Comienza fuera del viewport */
+    opacity: 0;
+    width: 100px;
+    transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+/* Clase que se añade para activar la animación */
+.imagen-animada.visible {
+    transform: translateX(120px); /* Ajusta según el desplazamiento deseado */
+    opacity: 1;
+} 
+
+@media (max-width: 768px) {
+    .nombre-cumpleanera {
+        font-size: 2.5em;
+    }
+    h2 {
+        font-size: 1.2em;
+    }
+    blockquote {
+        font-size: 0.9em;
+    }
+    .countdown-container {
+        margin-top: 30px;
+    }
+
+    /* Ajustes responsivos para la imagen del banner */
+    .banner-imagen {
+        max-width: 80%; /* Aumenta el tamaño en pantallas más pequeñas */
+        margin: 0 10px;
+    }
+}
+
+
+/* LINEAS */
+
+.decorative-lines-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.decorative-lines {
+    max-width: 100%;
+    height: auto;
+    opacity: 0.8; /* Ajusta la opacidad si deseas un efecto más sutil */
+    transition: transform 0.3s ease; /* Añade una animación al pasar el mouse */
+}
+
+.decorative-lines:hover {
+    transform: scale(1.05); /* Agranda ligeramente la imagen al pasar el mouse */
+}
+
+
+/* CSS para la sección de la fiesta */
+#nota-section {
+    text-align: center;
+    margin: 20px;
+}
+
+.nota-container {
+    background-color: #dddddd;
+    padding: 20px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nota-container h2 {
+    font-size: 2rem;
+    color: #2e4035;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nota-container p {
+    font-size: 1.1rem;
+    color: #2e4035;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.detalle-musica {
+    background-color: #f2f6f2;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.detalle-musica h3 {
+    font-size: 1.8rem;
+    color: #2e4035;
+    margin-bottom: 10px;
+}
+
+.icono-musica {
+    width: 50px;
+    margin: 10px 0;
+}
+
+.detalle-musica p {
+    font-size: 1rem;
+    color: #8c8c8c;
+    margin-bottom: 20px;
+}
+
+.detalle-musica button {
+    background-color: #7d8757;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    transition: background-color 0.3s;
+}
+
+.detalle-musica button:hover {
+    background-color: #6a7548;
+}
+
+
+/* Estilos iniciales de la imagen que viene desde la derecha */
+.imagen-animada-derecha {
+    position: absolute;
+    right: -100px; /* Comienza fuera del viewport desde la derecha */
+    opacity: 0;
+    width: 100px;
+    transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+/* Clase que se añade para activar la animación */
+.imagen-animada-derecha.visible {
+    transform: translateX(-120px); /* Mueve la imagen hacia la izquierda para que aparezca en pantalla */
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+/* footer */
+/* Estilo del footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: 0; /* Fondo en color oscuro */
+    color: #333; /* Texto en color claro */
+    font-size: 0.9em;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer strong {
+    font-weight: bold;
+}
+
+
+
+
